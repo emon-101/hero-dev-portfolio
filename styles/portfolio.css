@@ -29,6 +29,10 @@ nav h2 {
     cursor: pointer;
 }
 
+.hide {
+    display: none !important;
+}
+
 /* Header Section */
 header {
     background-color: #FFF8F3;
@@ -159,7 +163,7 @@ nav .menu a {
 
 #skills .skill-container {
     width: 71%;
-    min-width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -170,7 +174,6 @@ nav .menu a {
 
 .skill-box .skill-card {
     padding: 30px;
-    min-width: 267px;
     box-shadow: 0 6px 50px 0 #00000017;
 }
 
@@ -288,4 +291,23 @@ footer {
     border: none;
     border-radius: 5px;
     color: #757575;
+}
+
+
+@media screen and (max-width:576px) {
+
+    /* Skill section */
+    .skill-container {
+        max-width: 100%;
+    }
+
+    .skill-box {
+        flex-direction: column;
+    }
+
+    .section-heading {
+        width: 100%;
+    }
+
+    
 }
